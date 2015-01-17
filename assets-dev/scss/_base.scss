@@ -1,0 +1,88 @@
+// base.scss
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
+
+$blue: rgb(0, 0, 255);
+$yellow: rgb(255, 255, 0);
+$red: rgb(255, 0, 0);
+$tan: #F8F7F3;
+
+$opacity: 0.65;
+
+body {
+  background: $tan;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.circle {
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+  -moz-border-radius: 50% / 50%;
+  -webkit-border-radius: 50% 50%;
+  border-radius: 50% 50%;
+
+  @media only screen and (min-width: 320px) and (max-width: 641px) {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.red {
+  background: rgba($red, $opacity);
+}
+
+.blue {
+  background: rgba($blue, $opacity);
+}
+
+.yellow {
+  background: rgba($yellow, $opacity);
+}
+
+.wrapper {
+  text-align: center;
+  padding: 1rem 1rem;
+
+  @media only screen and (min-width: 641px) {
+    padding: 4rem 1rem;
+  }
+}
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.controls {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: white;
+
+  .size {
+    max-width: 12rem;
+    margin: 0 auto;
+    text-align: center;
+
+    p, span {
+      display: inline-block;
+    }
+
+    .control-title {
+      padding-right: 1.5rem;
+    }
+
+    span {
+      margin-right: 1.5rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

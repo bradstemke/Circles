@@ -1,0 +1,59 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
+body {
+  background: #F8F7F3;
+  height: 100%;
+  width: 100%;
+  margin: 0; }
+
+.circle {
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+  -moz-border-radius: 50%/50%;
+  -webkit-border-radius: 50% 50%;
+  border-radius: 50% 50%; }
+  @media only screen and (min-width: 320px) and (max-width: 641px) {
+    .circle {
+      height: 100px;
+      width: 100px; } }
+
+.red {
+  background: rgba(255, 0, 0, 0.65); }
+
+.blue {
+  background: rgba(0, 0, 255, 0.65); }
+
+.yellow {
+  background: rgba(255, 255, 0, 0.65); }
+
+.wrapper {
+  text-align: center;
+  padding: 1rem 1rem; }
+  @media only screen and (min-width: 641px) {
+    .wrapper {
+      padding: 4rem 1rem; } }
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 4rem; }
+
+.controls {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: white; }
+  .controls .size {
+    max-width: 12rem;
+    margin: 0 auto;
+    text-align: center; }
+    .controls .size p, .controls .size span {
+      display: inline-block; }
+    .controls .size .control-title {
+      padding-right: 1.5rem; }
+    .controls .size span {
+      margin-right: 1.5rem; }
+      .controls .size span:last-child {
+        margin-right: 0; }
